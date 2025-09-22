@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: white;
+    transition: background 0.5s;
+}
+
+hr {
+    width: 500px;
+}
+
+#errors {
+    color: coral;
+    font-weight: bold;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 48px; 
+    height: 48px;
+    border: 1px solid lightgray;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tile-start {
+    background-color: whitesmoke;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    background-color: #ffcccc;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    width: 44px; 
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number-selected {
+    background-color: gray;
+    color: white;
+}
+
+.horizontal-line {
+    border-bottom: 2px solid black;
+}
+
+.vertical-line {
+    border-right: 2px solid black;
+}
+
+.controls {
+    margin: 10px;
+}
+
+.themes button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#win-message {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+}
